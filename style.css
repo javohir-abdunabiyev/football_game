@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7cfc00;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out_top_out {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    /* background-color: grey; */
+}
+
+.out_top {
+    position: absolute;
+    top: 30px;
+    width: 95%;
+    height: 30px;
+    background-color: white;
+}
+
+.out_bottom {
+    position: absolute;
+    bottom: 30px;
+    width: 95%;
+    height: 30px;
+    background-color: white;
+}
+
+.out_bottom_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    /* background-color: grey; */
+}
+
+.left_goal {
+    position: absolute;
+    width: 50px;
+    height: 300px;
+    background-color: white;
+    left: 100px;
+    top: 28%;
+}
+
+.right_goal {
+    position: absolute;
+    width: 50px;
+    height: 300px;
+    background-color: white;
+    right: 100px;
+    top: 28%;
+}
+
+.center_line {
+    width: 30px;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 47%;
+}
+
+.left_corner_ugol {
+    width: 30px;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    top: 0x;
+    /* background-color: grey; */
+    left: 0;
+}
+
+.left_corner {
+    width: 30px;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    top: 29px;
+    background-color: white;
+    left: 30px;
+}
+
+.right_corner {
+    width: 30px;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    top: 29px;
+    background-color: white;
+    right: 30px;
+}
+
+.right_corner_ugol {
+    width: 30px;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    /* background-color: grey; */
+    right: 0;
+}
+
+.out_top_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out_bottom_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_for_div {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.ball {
+    display: flex;
+    width: 80px;
+    background-color: white;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("ball.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ball img {
+    width: 80px;
+    height: 80px;
+}
+
+.goal_text {
+    position: absolute;
+    display: none;
+    top: 70px;
+    left: 70px;
+    color: white;
+    font-size: 100px;
+}
+
+.notification {
+    position: absolute;
+    font-size: 80px;
+    top: 100px;
+    left: 100px;
+}
+
+.counter_block {
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background-color: grey;
+    color: white;
+    z-index: 1;
+    border-radius:0 0 15px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 55px;
+    left: 35%;
+    width: 90px;
+}
+
+.left_goal_counter {
+    position: absolute;
+    left: 57px;
+    font-size: 70px;
+}
+
+.right_goal_counter {
+    position: absolute;
+    right: 57px;
+    font-size: 70px;
+}
